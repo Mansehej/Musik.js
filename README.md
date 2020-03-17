@@ -1,6 +1,9 @@
 # Musik.js
 A library to make complex music pieces easily in JavaScript
 
+## In progress - To be released! 
+### (Check current progress sections for available features)
+
 ## Goals
 - A developer with little/no music knowledge can easily create music programmatically. (ex. Simply copy-pasting song notes from the internet works)
 - Multiple music pieces that are played parallelly can be easily added to a part. (ex. Right hand and left hand parts of the piano)
