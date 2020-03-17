@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Mansehej/Musik.js/issues"
   },
-  "homepage": "https://github.com/Mansehej/Musik.js#readme"
+  "homepage": "https://github.com/Mansehej/Musik.js#readme",
+  "dependencies": {
+    "scribbletune": "^3.5.1"
+  }
 }
