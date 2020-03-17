@@ -1,0 +1,19 @@
+{
+  "name": "musik",
+  "version": "1.0.0",
+  "description": "A library to make complex music pieces easily in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mansehej/Musik.js.git"
+  },
+  "author": "Mansehej Singh (mansehej@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mansehej/Musik.js/issues"
+  },
+  "homepage": "https://github.com/Mansehej/Musik.js#readme"
+}
