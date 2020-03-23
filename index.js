@@ -40,7 +40,7 @@ function makeClip(notes, normalScale) {
     } else {
       pattern = pattern + "x";
 
-      // Handle for when note has different octave than default
+      // Handle for when note does not have different octave than default
       if (!/\d/.test(notesArray[i])) {
         notesArray[i] = notesArray[i] + normalScale;
       }
