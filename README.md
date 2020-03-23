@@ -26,16 +26,20 @@ Optional inputs are octave (default = 4) and filename (default = musik.mid)
 
 **Example:**
 
+Array of notes as input:
 ``` JavaScript
 makeMidi(['F#', 'F#', 'F#', 'A#', 'D#5', 'D#5', 'D#5', 'C#5', 'A#', 'A#', 'A#', 'A#', 'F', 'F', 'F', 'D#'], 4)
 ```
+
 Or
 
+String of notes (with sharp notes) as input:
 ``` JavaScript
 makeMidi("F# F# F# A# D#5 D#5 D#5 C#5 A# A# A# A# F F F D#", 4)
 ```
 Or
 
+String of notes (with flat notes) as input:
 ``` JavaScript
 makeMidi("Gb Gb Gb Bb Eb5 Eb5 Eb5 Db5 Bb Bb Bb Bb F F F Eb", 4)
 ```
