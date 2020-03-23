@@ -19,8 +19,8 @@ function makeClip(notes, normalScale) {
   let notesArray;
 
   // Check if input type is valid
-
   if (typeof notes == "string") {
+
     // Convert string of notes into array
     notesArray = notesArrayFromString(notes);
   } else if (Array.isArray(notes)) {
@@ -40,9 +40,25 @@ function makeClip(notes, normalScale) {
     } else {
       pattern = pattern + "x";
 
-      // Handle for when note does not have different octave than default
-      if (!/\d/.test(notesArray[i])) {
-        notesArray[i] = notesArray[i] + normalScale;
+      // Handle for when note does not have specified numerical octave
+      if (!/\d$/.test(notesArray[i])) {
+        
+        // Increment octave of note on usage of +
+        if (/\+$/.test(notesArray[i])) {
+          let incrementedNote = notesArray[i].replace(/\+$/, "");
+          notesArray[i] = incrementedNote + (normalScale + 1);
+        } 
+        
+        // Deccrement octave of note on usage of -
+        else if (/\-$/.test(notesArray[i])) {
+          let decrementedNote = notesArray[i].replace(/\-$/, "");
+          notesArray[i] = decrementedNote + (normalScale - 1);
+        } 
+        
+        // Else apply default octave
+        else {
+          notesArray[i] = notesArray[i] + normalScale;
+        }
       }
     }
   }
