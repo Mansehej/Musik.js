@@ -18,22 +18,29 @@ A library to make complex music pieces easily in JavaScript
 Converts simple sound notes and exports them as a MIDI file
 
 Takes a string with notes seperated by an empty space as input.
+Can also take an array of notes as an input.
+
+Each note that is of an octave that is not the octave specified in the second argument, must have an octave number with it. (Example: C#5)
+
 Optional inputs are octave (default = 4) and filename (default = musik.mid)
 
 **Example:**
 
 ``` JavaScript
-makeMidi("F# F# F# A# D#5 D#5 D#5 C#5 A# A# A# A# F F F D#", 4)
+makeMidi(['F#', 'F#', 'F#', 'A#', 'D#5', 'D#5', 'D#5', 'C#5', 'A#', 'A#', 'A#', 'A#', 'F', 'F', 'F', 'D#'], 4)
 ```
-
-This automatically creates a MIDI file (musik.mid) that plays _Faded (by Alan Walker)_'s intro on the 4th octave.
-
-Both sharp notes and flat notes are supported. Hence, the above example can be rewritten as: 
+Or
 
 ``` JavaScript
 makeMidi("F# F# F# A# D#5 D#5 D#5 C#5 A# A# A# A# F F F D#", 4)
 ```
+Or
 
+``` JavaScript
+makeMidi("Gb Gb Gb Bb Eb5 Eb5 Eb5 Db5 Bb Bb Bb Bb F F F Eb", 4)
+```
+
+All of these automatically create a MIDI file (musik.mid) that plays _Faded (by Alan Walker)_'s intro on the 4th octave. Both sharp and flat notes are supported as demonstrated in the example above.
 
 Use an underscore ( _ ) to denote a note break.
 
