@@ -39,11 +39,15 @@ function makeClip(notes, normalScale) {
       i--;
     } else {
       pattern = pattern + "x";
+
+      // Handle for when note has different octave than default
       if (!/\d/.test(notesArray[i])) {
         notesArray[i] = notesArray[i] + normalScale;
       }
     }
   }
+
+  // Object for scribble.clip
   var musicObj = {
     pattern: pattern,
     notes: notesArray
