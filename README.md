@@ -69,6 +69,6 @@ Capitalization does not matter.
 ``` JavaScript
 makeMidi('c c g g a a g _ f f e e d d c', 5, 'twinkle')
 ```
-This automatically creates a MIDI file (twinkle.mid) that plays the first line of the rhyme _Twinkle twinke little stars_ on the 4th octave.
+This automatically creates a MIDI file (twinkle.mid) that plays the first line of the rhyme _Twinkle twinke little stars_ on the 5th octave.
 
 Notice the note break after the first _star_.
